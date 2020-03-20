@@ -79,7 +79,7 @@ nav ul {
 }
 
 main {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 h1 {
@@ -102,7 +102,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   background: #0D2840;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   color: #F0F1F6;
 }
 
@@ -149,7 +149,28 @@ footer p {
   margin-left: 15px;
 }
 
-.main-sobre img, .avatar {
-  margin: 0 auto;
+.main-sobre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.texto-sobre {
+  text-align: center;
+}
+
+.avatar, .texto-sobre p {
+  margin-bottom: 50px;
+}
+
+.texto-sobre h2 {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

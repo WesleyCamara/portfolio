@@ -78,7 +78,7 @@ nav ul{
 }
 
 main {
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 h1 {
@@ -99,7 +99,7 @@ h2 {
 .item-projeto {
     display: flex;
     background: $cor-primaria;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     color: $cor-clara;
 }
 
@@ -141,6 +141,21 @@ footer p{
     margin-left: 15px;
 }
 
-.main-sobre img, .avatar{
-    margin: 0 auto;
+.main-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.texto-sobre {
+    text-align: center;
+}
+
+.avatar, .texto-sobre p {
+    margin-bottom: 50px;
+}
+
+.texto-sobre h2 {
+    margin-bottom: 20px;
+}
+
