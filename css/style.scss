@@ -1,0 +1,42 @@
+@import url("reset.css");
+
+$cor-primaria: #4B406B;
+$cor-secundaria: #27D2D1;
+$cor-fundo: #F0F1F6;
+
+$fonte-normal: 'Roboto', sans-serif;
+$fonte-titulo: "arial", sans-serif;
+
+body {
+    background: $cor-fundo;
+    font-family: $fonte-normal;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto
+}
+
+.topo{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    text-transform: uppercase;
+    font-family: $fonte-titulo;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.social{
+    align-self: flex-start;
+}
+

@@ -1,0 +1,48 @@
+@import url("reset.css");
+body {
+  background: #F0F1F6;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.topo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  font-family: "arial", sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+.social {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.fab {
+  width: 1;
+}
+/*# sourceMappingURL=style.css.map */
