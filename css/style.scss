@@ -33,6 +33,7 @@ body {
     font-family: $fonte-decorativa;
     color: $cor-clara;
     font-size: 3.5em;
+    transition:all 1s;
 }
 
 .logo:hover {
@@ -52,25 +53,33 @@ nav ul{
     padding: 10px;
 }
 
+.itens-menu li{
+    margin: 5px;
+}
+
 .itens-menu li a, .itens-menu li a:visited, .itens-menu li a:active{
     letter-spacing: 3px;
     padding: 15px;
     color: $cor-clara;
+
 }
 
 .itens-menu li a:hover {
     color: $cor-secundaria;
-    border-bottom: 3px solid $cor-secundaria;
+    transition:all 1s;
 
 }
 
 .fa-linkedin, .fa-github{
     padding: 10px;
     color: $cor-clara;
+    transition:all 1s;
+
 }
 
 .fa-linkedin:hover, .fa-github:hover{
     color: $cor-secundaria;
+    transition:all 1s;
 }
 
 .social{
@@ -101,10 +110,12 @@ h2 {
     background: $cor-primaria;
     margin-bottom: 50px;
     color: $cor-clara;
+
 }
 
 .item-projeto img{
-    max-width: 50%;
+    display: flex;
+    max-width: 60%;
 }
 
 .texto-projeto {
@@ -158,4 +169,3 @@ footer p{
 .texto-sobre h2 {
     margin-bottom: 20px;
 }
-

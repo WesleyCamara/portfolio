@@ -30,6 +30,8 @@ body {
   font-family: "Playball", cursive;
   color: #F0F1F6;
   font-size: 3.5em;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .logo:hover {
@@ -53,6 +55,10 @@ nav ul {
   padding: 10px;
 }
 
+.itens-menu li {
+  margin: 5px;
+}
+
 .itens-menu li a, .itens-menu li a:visited, .itens-menu li a:active {
   letter-spacing: 3px;
   padding: 15px;
@@ -61,16 +67,21 @@ nav ul {
 
 .itens-menu li a:hover {
   color: #A0D925;
-  border-bottom: 3px solid #A0D925;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .fa-linkedin, .fa-github {
   padding: 10px;
   color: #F0F1F6;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .fa-linkedin:hover, .fa-github:hover {
   color: #A0D925;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .social {
@@ -107,7 +118,10 @@ h2 {
 }
 
 .item-projeto img {
-  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 60%;
 }
 
 .texto-projeto {
