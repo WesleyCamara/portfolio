@@ -10,15 +10,35 @@ body {
 }
 
 .topo {
+  background: #0D2840;
+  padding: 50px 0 50px 0;
+}
+
+.fa-linkedin, .fa-github {
+  padding: 10px;
+  color: #F0F1F6;
+}
+
+.fa-linkedin:hover, .fa-github:hover {
+  color: #A0D925;
+}
+
+.topo div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo {
+  font-family: "Playball", cursive;
+  color: #F0F1F6;
+  font-size: 3.5em;
 }
 
 nav {
@@ -35,6 +55,17 @@ nav ul {
   font-family: "arial", sans-serif;
   font-size: 2em;
   text-decoration: none;
+  padding: 10px;
+}
+
+.itens-menu li a, .itens-menu li a:visited, .itens-menu li a:active {
+  padding: 10px;
+  color: #F0F1F6;
+}
+
+.itens-menu li a:hover {
+  color: #A0D925;
+  border-bottom: 3px solid #A0D925;
 }
 
 .social {
@@ -42,7 +73,15 @@ nav ul {
       align-self: flex-start;
 }
 
-.fab {
-  width: 1;
+main {
+  padding-top: 30px;
+}
+
+h1 {
+  font-family: "arial", sans-serif;
+  color: #A0D925;
+  font-size: 3em;
+  text-align: center;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

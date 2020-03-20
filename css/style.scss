@@ -1,27 +1,49 @@
 @import url("reset.css");
 
-$cor-primaria: #4B406B;
-$cor-secundaria: #27D2D1;
-$cor-fundo: #F0F1F6;
+$cor-primaria: #0D2840;
+$cor-secundaria: #A0D925;
+$cor-clara: #F0F1F6;
 
 $fonte-normal: 'Roboto', sans-serif;
 $fonte-titulo: "arial", sans-serif;
+$fonte-decorativa: 'Playball', cursive;
 
 body {
-    background: $cor-fundo;
+    background: $cor-clara;
     font-family: $fonte-normal;
 }
 
 .container {
     max-width: 90%;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
-.topo{
+.topo {
+    background: $cor-primaria;
+    padding: 50px 0 50px 0;
+}
+
+.fa-linkedin, .fa-github{
+    padding: 10px;
+    color: $cor-clara;
+}
+
+.fa-linkedin:hover, .fa-github:hover{
+    color: $cor-secundaria;
+}
+
+.topo div{
     display: flex;
-    justify-content: space-around;
-    padding-top: 50px;
+    justify-content: space-between;
+
     align-items: center;
+
+}
+
+.logo {
+    font-family: $fonte-decorativa;
+    color: $cor-clara;
+    font-size: 3.5em;
 }
 
 nav {
@@ -34,9 +56,33 @@ nav ul{
     font-family: $fonte-titulo;
     font-size: 2em;
     text-decoration: none;
+    padding: 10px;
+}
+
+.itens-menu li a, .itens-menu li a:visited, .itens-menu li a:active{
+    padding: 10px;
+    color: $cor-clara;
+}
+
+.itens-menu li a:hover {
+    color: $cor-secundaria;
+    border-bottom: 3px solid $cor-secundaria;
+
 }
 
 .social{
     align-self: flex-start;
+}
+
+main {
+    padding-top: 30px;
+}
+
+h1 {
+    font-family: $fonte-titulo;
+    color: $cor-secundaria;
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
