@@ -61,6 +61,8 @@ a {
 .contato:hover {
   color: #a0d925;
   border: 3px solid #a0d925;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 nav {
@@ -98,6 +100,8 @@ nav {
 
 .link-sobre a:hover, .fa-angle-double-down:hover {
   color: #f0f1f6;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 .social {
@@ -119,6 +123,8 @@ nav {
 .fa-github:hover,
 .fa-envelope:hover {
   color: #a0d925;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
 }
 
 main {
@@ -230,6 +236,86 @@ p {
   margin-bottom: 30px;
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30vw;
+  font-family: "Nunito", sans-serif;
+}
+
+input {
+  border-top: #a0d925 2px solid;
+  border-bottom: none;
+  height: 2em;
+}
+
+textarea {
+  border: #a0d925 2px solid;
+}
+
+input, textarea {
+  color: #113a5e;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+  border-left: #a0d925 2px solid;
+  border-right: #a0d925 2px solid;
+  padding: 5px;
+}
+
+textarea:focus, input:focus, select:focus {
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+  border: #113a5e 2px solid;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #113a5e;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #113a5e;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #113a5e;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #113a5e;
+  font-family: "Nunito", sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+  height: 15vh;
+}
+
+.contato-botao {
+  width: 80px;
+  height: 30px;
+  background: #a0d925;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.contato-botao:focus, .contato-botao:active {
+  outline: none;
+  background: #113a5e;
+  color: #f0f1f6;
+}
+
 footer {
   background: #113a5e;
   padding: 10px;
@@ -253,5 +339,32 @@ footer div {
           align-items: center;
   background: #113a5e;
   color: #f0f1f6;
+}
+
+[data-anima="maquina"]::after {
+  content: '|';
+  opacity: 1;
+  margin-left: 5px;
+  display: inline-block;
+  -webkit-animation: hoverlento .9s;
+          animation: hoverlento .9s;
+}
+
+@-webkit-keyframes hoverlento {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hoverlento {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=geral.css.map */

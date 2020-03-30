@@ -2,6 +2,9 @@
   html {
     font-size: 10px;
   }
+  form {
+    width: 90vw;
+  }
 }
 
 @media only screen and (max-width: 475px) {
