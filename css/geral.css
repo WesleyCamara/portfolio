@@ -96,8 +96,7 @@ nav {
   color: #a0d925;
 }
 
-.link-sobre a:hover,
-.destaque:hover, .fa-angle-double-down:hover {
+.link-sobre a:hover, .fa-angle-double-down:hover {
   color: #f0f1f6;
 }
 

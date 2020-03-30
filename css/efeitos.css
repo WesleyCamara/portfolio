@@ -1,9 +1,12 @@
+/* barra piscando depois de digitação */
+/* -------------------------------------------------------------------- */
+
 [data-anima="maquina"]::after {
     content: '|';
     opacity: 1;
     margin-left: 5px;
     display: inline-block;
-    animation: blink .7s infinite;
+    animation: blink .9s infinite;
 
   }
 
