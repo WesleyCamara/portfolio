@@ -1,15 +1,29 @@
+// Padroes de cores de fontes
+//----------------------------------------------------------------------------------------------
+
 $cor-primaria: #113a5e;
-$cor-secundaria: #A0D925;
-$cor-clara: #F0F1F6;
+$cor-secundaria: #a0d925;
+$cor-clara: #f0f1f6;
 
-$fonte-normal: 'Nunito', sans-serif;
-$fonte-titulo: 'arial', sans-serif;
-$fonte-decorativa: 'Playball', cursive;
+$fonte-normal: "Nunito", sans-serif;
+$fonte-titulo: "arial", sans-serif;
+$fonte-decorativa: "Playball", cursive;
+
+$tamanho-destaque: 4em;
+$tamanho-titulo: 2.25em;
+$tamanho-subtitulo: 2.5em;
+$tamanho-texto: 1.5em;
 
 
+// Normalização do body
+//----------------------------------------------------------------------------------------------
 body {
     background: $cor-clara;
     font-family: $fonte-normal;
+}
+
+a {
+    color: $cor-clara;
 }
 
 .container {
@@ -17,167 +31,213 @@ body {
     margin: 0 auto;
 }
 
-.topo {
-    background: $cor-primaria;
-    padding: 20px 0;
-
+// Estilização do header
+//----------------------------------------------------------------------------------------------
+.header {
+    width: 100%;
+    min-height: 101vh;
+    background: url("../img/banner2.jpg") no-repeat center;
+    background-size: cover;
 }
 
-.topo div{
+.header .container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
 .logo {
-    font-family: $fonte-decorativa;
-    color: $cor-clara;
-    font-size: 3.5em;
-    transition:all 1s;
+    max-width: 500px;
+    margin: 50px auto;
 }
 
-.logo:hover {
+.destaque {
+    font-family: $fonte-titulo;
     color: $cor-secundaria;
+    font-size: $tamanho-destaque;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+}
+
+.contato {
+    border: 3px solid $cor-clara;
+    font-weight: 500;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contato a:visited, .contato a:visited,
+.contato a:active {
+    color: $cor-clara;
+}
+
+.contato:hover {
+    color: $cor-secundaria;
+    border: 3px solid $cor-secundaria;
 }
 
 nav {
-    display: flex;
-}
-
-nav ul{
-    display: flex;
     text-transform: uppercase;
     font-family: $fonte-titulo;
-    font-size: 2em;
+    font-size: $tamanho-titulo;
     text-decoration: none;
-    padding: 10px;
+    text-align: center;
 }
 
-.itens-menu li{
-    margin: 5px;
-}
-
-.itens-menu li a, .itens-menu li a:visited, .itens-menu li a:active{
-    letter-spacing: 3px;
-    padding: 15px;
-    color: $cor-clara;
-
-}
-
-.itens-menu li a:hover {
-    color: $cor-secundaria;
-    transition:all 1s;
-
-}
-
-.fa-linkedin, .fa-github{
-    padding: 10px;
-    color: $cor-clara;
-    transition:all 1s;
-
-}
-
-.fa-linkedin:hover, .fa-github:hover{
-    color: $cor-secundaria;
-    transition:all 1s;
-}
-
-.social{
-    align-self: flex-start;
-}
-
-main {
-    padding-top: 60px;
+.link-sobre{
     display: flex;
     flex-direction: column;
+    align-items: center;;
 }
 
+.link-sobre a{
+    margin-bottom: 12px;
+}
 
-h1 {
-    font-family: $fonte-titulo;
+.link-sobre a,.fa-angle-double-down,
+.itens-menu a:visited,
+.itens-menu a:active {
+    letter-spacing: 3px;
+    padding: 15px;
     color: $cor-secundaria;
-    font-size: 4em;
-    text-align: center;
-    padding-bottom: 40px;
-    letter-spacing: 2px
+}
+
+.link-sobre a:hover,
+.destaque:hover, .fa-angle-double-down:hover {
+    color: $cor-clara;
+}
+
+.social {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-envelope {
+    padding: 10px;
+    color: $cor-clara;
+    display: block;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-envelope:hover {
+    color: $cor-secundaria;
+}
+
+// inicio da seção com os projetos realizados
+//----------------------------------------------------------------------------------------------
+main {
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
     font-family: $fonte-titulo;
     color: $cor-secundaria;
-    font-size: 1.5em;
-}
-
-.principal {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    font-size: $tamanho-subtitulo;
 }
 
 .item-projeto {
-    display: flex;
-    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    height: 101vh;
+    background: $cor-primaria;
     color: $cor-clara;
     flex-wrap: wrap;
-}
+    padding: 20px;
+    margin-bottom: 100px;
+    }
 
-.img-projeto{
-    max-width:50%;
+
+.img-projeto {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .texto-projeto {
-    background: $cor-primaria;
-    width: 50%;
+    max-width: 80%;
+    color: $cor-primaria;
     padding: 20px;
     padding-top: 20px;
-        
 }
 
 .texto-projeto h2 {
     padding-bottom: 20px;
-    font-size: 2em;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    color: $cor-secundaria;
+    text-align: center;
 }
 
 p {
-    font-size: 1em;
+    font-size: $tamanho-texto;
     letter-spacing: 1px;
     line-height: 1.5em;
+    color: $cor-clara
 }
 
-footer{
-    background: $cor-primaria;
+.projeto-fylo{
+    background: $cor-clara;
+
 }
 
-footer div{ 
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: $cor-primaria;
-    color: $cor-clara;
-    padding: 30px 0;
-}
-
-footer p{
-    margin-left: 15px;
+.projeto-fylo h2, .projeto-fylo p{
+    color: $cor-primaria;
+font-weight: 500;
 }
 
 
+// inicio da area sobre
+//----------------------------------------------------------------------------------------------
 
-.main-sobre {
+.sobre{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    min-height: 80vh;
 }
 
+.avatar{
+    margin-bottom: 80px;
+}
 .texto-sobre {
     text-align: center;
 }
 
-.avatar, .texto-sobre p {
-    margin-bottom: 50px;
+.texto-sobre h1{
+    font-size: $tamanho-destaque;
+    margin-bottom: 20px;
 }
 
-.texto-sobre h2 {
-    margin-bottom: 20px;
+.texto-sobre h2{
+    margin-bottom: 10px;
+}
+
+.texto-sobre p{
+    color: $cor-primaria;
+    margin-bottom: 30px;
+}
+
+//rodapé
+//----------------------------------------------------------------------------------------------
+footer {
+    background: $cor-primaria;
+    padding:10px;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    background: $cor-primaria;
+    color: $cor-clara;
 }

@@ -1,34 +1,38 @@
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
 
-  .item-projeto {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .img-projeto, .texto-projeto {
-    max-width: 100%;
-    width: 100%;
-  }
-
-  }
-
-  @media only screen and (max-width: 850px) {
-
-    .topo .container{
-      flex-direction: column;
+@media only screen and (max-width: 475px) {
+    html {
+        font-size: 10px;
+    }
+    .logo {
+        max-width: 150px;
+        margin: 40px auto;
+    }
+    .contato {
+        display: none;
     }
 
-    .social{
-      align-self: initial;
-  }
 
-  footer div{  
-      flex-direction: column;
-      
-    }
-    footer div .social{
-      flex-direction: row;
-    }
-  
+    .destaque {
+        margin-bottom: 80px;
     }
 
+    .item-projeto{
+        padding: 1em;
+        margin-bottom: 50px;
+        grid-template-rows: 2fr 1fr 1fr;
+    }
+
+    .texto-projeto {
+        max-width: 95%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
