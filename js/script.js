@@ -1,4 +1,3 @@
-
 // efeito de maquina de escrever
 // --------------------------------------------------------------------
 function initMaquina() {
