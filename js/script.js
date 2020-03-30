@@ -1,4 +1,7 @@
 
+// efeito de maquina de escrever
+// --------------------------------------------------------------------
+
 function maquina(elemento) {
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = '';
