@@ -14,7 +14,6 @@ $tamanho-titulo: 2.25em;
 $tamanho-subtitulo: 2.5em;
 $tamanho-texto: 1.5em;
 
-
 // Normalização do body
 //----------------------------------------------------------------------------------------------
 body {
@@ -67,7 +66,8 @@ a {
     margin-bottom: 20px;
 }
 
-.contato a:visited, .contato a:visited,
+.contato a:visited,
+.contato a:visited,
 .contato a:active {
     color: $cor-clara;
 }
@@ -75,7 +75,7 @@ a {
 .contato:hover {
     color: $cor-secundaria;
     border: 3px solid $cor-secundaria;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 
 nav {
@@ -86,17 +86,18 @@ nav {
     text-align: center;
 }
 
-.link-sobre{
+.link-sobre {
     display: flex;
     flex-direction: column;
-    align-items: center;;
+    align-items: center;
 }
 
-.link-sobre a{
+.link-sobre a {
     margin-bottom: 12px;
 }
 
-.link-sobre a,.fa-angle-double-down,
+.link-sobre a,
+.fa-angle-double-down,
 .itens-menu a:visited,
 .itens-menu a:active {
     letter-spacing: 3px;
@@ -104,9 +105,10 @@ nav {
     color: $cor-secundaria;
 }
 
-.link-sobre a:hover, .fa-angle-double-down:hover {
+.link-sobre a:hover,
+.fa-angle-double-down:hover {
     color: $cor-clara;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 
 .social {
@@ -126,7 +128,7 @@ nav {
 .fa-github:hover,
 .fa-envelope:hover {
     color: $cor-secundaria;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 
 // inicio da seção com os projetos realizados
@@ -154,8 +156,7 @@ h2 {
     flex-wrap: wrap;
     padding: 20px;
     margin-bottom: 100px;
-    }
-
+}
 
 .img-projeto {
     max-width: 1000px;
@@ -180,24 +181,23 @@ p {
     font-size: $tamanho-texto;
     letter-spacing: 1px;
     line-height: 1.5em;
-    color: $cor-clara
+    color: $cor-clara;
 }
 
-.projeto-fylo{
+.projeto-fylo {
     background: $cor-clara;
-
 }
 
-.projeto-fylo h2, .projeto-fylo p{
+.projeto-fylo h2,
+.projeto-fylo p {
     color: $cor-primaria;
-font-weight: 500;
+    font-weight: 500;
 }
-
 
 // inicio da area sobre
 //----------------------------------------------------------------------------------------------
 
-.sobre{
+.sobre {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -205,23 +205,23 @@ font-weight: 500;
     min-height: 80vh;
 }
 
-.avatar{
+.avatar {
     margin-bottom: 80px;
 }
 .texto-sobre {
     text-align: center;
 }
 
-.texto-sobre h1{
+.texto-sobre h1 {
     font-size: $tamanho-destaque;
     margin-bottom: 20px;
 }
 
-.texto-sobre h2{
+.texto-sobre h2 {
     margin-bottom: 10px;
 }
 
-.texto-sobre p{
+.texto-sobre p {
     color: $cor-primaria;
     margin-bottom: 30px;
 }
@@ -233,18 +233,19 @@ form {
     font-family: $fonte-normal;
 }
 
-input{
+input {
     border-top: $cor-secundaria 2px solid;
     border-bottom: none;
     height: 2em;
 }
 
-textarea{
-    border: $cor-secundaria 2px solid
+textarea {
+    border: $cor-secundaria 2px solid;
 }
 
-input, textarea{
-    color:$cor-primaria;
+input,
+textarea {
+    color: $cor-primaria;
     font-family: $fonte-normal;
     font-size: 1em;
     border-left: $cor-secundaria 2px solid;
@@ -252,14 +253,17 @@ input, textarea{
     padding: 5px;
 }
 
-textarea:focus, input:focus, select:focus {
+textarea:focus,
+input:focus,
+select:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-    border: $cor-primaria 2px solid;;
+    border: $cor-primaria 2px solid;
 }
 
-input::placeholder, textarea::placeholder {
-    color:$cor-primaria;
+input::placeholder,
+textarea::placeholder {
+    color: $cor-primaria;
     font-family: $fonte-normal;
     font-size: 1em;
 }
@@ -268,7 +272,7 @@ textarea {
     height: 15vh;
 }
 
-.contato-botao{
+.contato-botao {
     width: 80px;
     height: 30px;
     background: $cor-secundaria;
@@ -276,7 +280,8 @@ textarea {
     margin-bottom: 30px;
 }
 
-.contato-botao:focus, .contato-botao:active {
+.contato-botao:focus,
+.contato-botao:active {
     outline: none;
     background: $cor-primaria;
     color: $cor-clara;
@@ -285,7 +290,7 @@ textarea {
 //----------------------------------------------------------------------------------------------
 footer {
     background: $cor-primaria;
-    padding:10px;
+    padding: 10px;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -299,26 +304,22 @@ footer div {
     color: $cor-clara;
 }
 
-
 // animações de hover
 //----------------------------------------------------------------------------------------------
 
-
-
 [data-anima="maquina"]::after {
-    content: '|';
+    content: "|";
     opacity: 1;
     margin-left: 5px;
     display: inline-block;
-    animation: hoverlento .9s;
+    animation: hoverlento 0.9s;
+}
 
-  }
-
-  @keyframes hoverlento {
+@keyframes hoverlento {
     from {
-      opacity: 1;
+        opacity: 1;
     }
     to {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}

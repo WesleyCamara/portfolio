@@ -25,11 +25,11 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .logo {
@@ -53,8 +53,7 @@ a {
   margin-bottom: 20px;
 }
 
-.contato a:visited, .contato a:visited,
-.contato a:active {
+.contato a:visited, .contato a:visited, .contato a:active {
   color: #f0f1f6;
 }
 
@@ -79,20 +78,18 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .link-sobre a {
   margin-bottom: 12px;
 }
 
-.link-sobre a, .fa-angle-double-down,
-.itens-menu a:visited,
-.itens-menu a:active {
+.link-sobre a, .fa-angle-double-down, .itens-menu a:visited, .itens-menu a:active {
   letter-spacing: 3px;
   padding: 15px;
   color: #a0d925;
@@ -111,17 +108,13 @@ nav {
   margin-bottom: 100px;
 }
 
-.fa-linkedin,
-.fa-github,
-.fa-envelope {
+.fa-linkedin, .fa-github, .fa-envelope {
   padding: 10px;
   color: #f0f1f6;
   display: block;
 }
 
-.fa-linkedin:hover,
-.fa-github:hover,
-.fa-envelope:hover {
+.fa-linkedin:hover, .fa-github:hover, .fa-envelope:hover {
   color: #a0d925;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -133,8 +126,8 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 h2 {
@@ -147,17 +140,17 @@ h2 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   justify-items: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   max-width: 100%;
   height: 101vh;
   background: #113a5e;
   color: #f0f1f6;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 20px;
   margin-bottom: 100px;
 }
@@ -203,14 +196,14 @@ p {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-height: 80vh;
 }
 
@@ -242,8 +235,8 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 30vw;
   font-family: "Nunito", sans-serif;
 }
@@ -269,7 +262,7 @@ input, textarea {
 
 textarea:focus, input:focus, select:focus {
   -webkit-box-shadow: 0 0 0 0;
-          box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
   outline: 0;
   border: #113a5e 2px solid;
 }
@@ -324,10 +317,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 footer div {
@@ -335,8 +328,8 @@ footer div {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background: #113a5e;
   color: #f0f1f6;
 }
@@ -347,7 +340,7 @@ footer div {
   margin-left: 5px;
   display: inline-block;
   -webkit-animation: hoverlento .9s;
-          animation: hoverlento .9s;
+  animation: hoverlento .9s;
 }
 
 @-webkit-keyframes hoverlento {
@@ -367,4 +360,5 @@ footer div {
     opacity: 0;
   }
 }
+
 /*# sourceMappingURL=geral.css.map */

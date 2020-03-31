@@ -28,7 +28,7 @@
     padding: 1em;
     margin-bottom: 50px;
     -ms-grid-rows: 2fr 1fr 1fr;
-        grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
   }
   .texto-projeto {
     max-width: 95%;
@@ -46,8 +46,9 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
+
 /*# sourceMappingURL=mobile.css.map */
