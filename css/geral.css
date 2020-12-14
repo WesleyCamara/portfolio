@@ -7,6 +7,12 @@ a {
   color: #f0f1f6;
 }
 
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+}
+
 .container {
   max-width: 90%;
   margin: 0 auto;
