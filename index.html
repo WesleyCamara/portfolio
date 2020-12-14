@@ -116,9 +116,13 @@
 
 
             <form class="formulario-contato">
-                <input type="text" class="form-nome" placeholder="Nome" required="">
-                <input type="text" class="form-email" placeholder="Email" required="">
-                <textarea maxlength="1300" class="textarea" placeholder="Digite sua mensagem" required=""></textarea>
+                <label for="nome">Nome</label>
+                <input type="text" class="form-nome" placeholder="Nome" id='nome' required="">
+                <label for="email">Nome</label>
+                <input type="text" class="form-email" placeholder="Email" id="email" required="">
+                <label for="mensagem">Mensagem</label>
+
+                <textarea maxlength="1300" class="textarea" id="mensagem" placeholder="Digite sua mensagem" required=""></textarea>
 
             </form>
             <button type="submit" class="contato-botao">Enviar</button>
